@@ -1,9 +1,12 @@
-{% extends 'base.html' %}
-{% block main %}
-<main>
-    <ul>
+{% extends 'base.html' %} {% block main %}
+<main class="container mt-3">
+    <h1>Author</h1>
+    <ul class='m1-0 p1-0'>
         {% for author in authors %}
-        <li>{{ author.name }} : {{ author.books.last.title }}</li>
+        <li class="d-flex align-items-center border rounded mb-3 p-0">
+            <h4 class="col-4 border-right mb-0 p-2"><a href="{{author.get_absolute_url}}">{{ author.name }}</a></h4>
+            <p class="pl-3 mb-0">Last Book: <a href="{{author.books.last.get_absolute_url}}">{{ author.books.last.title }}</a></p>
+        </li>
         {% endfor %}
     </ul>
     {% include 'components/paginate.html' %}

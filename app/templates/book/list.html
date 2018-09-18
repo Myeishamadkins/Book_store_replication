@@ -1,11 +1,18 @@
-{% extends 'base.html' %}{% load static %}
-{% block main %}
+{% extends 'base.html' %}{% load static %} {% block main %}
 
-<main>
+<main class="container mt-3">
     <h1>Books</h1>
-    <ul>
+    <ul class="m1-0 p1-0">
         {% for book in books %}
-        <li>{{ book.title }}</li>
+        <li class="d-flex align-items-center border rounded mb-3 p-0"><img src="{{book.cover_image.url}}" width="115" height="115">
+            <div>
+                <p class="p-3">Title: <a href="book.title">{{ book.title }}</a></p>
+                <p class="p-3">By:</p>
+            </div>
+            <div>
+                <p class="">Price: </p>
+            </div>
+        </li>
         {% endfor %}
     </ul>
     {% include 'components/paginate.html' %}
