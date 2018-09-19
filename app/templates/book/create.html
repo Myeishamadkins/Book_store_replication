@@ -1,6 +1,23 @@
-{% extends 'base.html' %}
-{% block main %}
-<form method="post" enctype="multipart/form-data">
+{% extends 'base.html' %} {% block main %}
+<form class="container mt-3" method="post" enctype="multipart/form-data">
+    <div class="title">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend ">
+                <span class="input-group-text " id="basic-addon1 ">Title: </span>
+            </div>
+            <input type="text " class="form-control " placeholder="Insert title here... " aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    </div>
+    <div class="price">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text">0.00</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+        </div>
+    </div>
+    <div class="authors"></div>
     {% csrf_token %}
 </form>
 {% endblock main %}

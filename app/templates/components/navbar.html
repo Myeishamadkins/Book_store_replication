@@ -1,5 +1,11 @@
 <nav class="navbar navbar-expand navbar-dark bg-primary">
-    <a href="{% url 'home' %}" class="navbar-brand">Book Store</a>
-    <a href="{% url 'book-list' %}" class="navbar-brand">List</a>
-    <a href="{% url 'author-list' %}" class="navbar-brand">Authors</a>
+    <a href="{% url 'home' %}" class="navbar-brand border border-white border rounded p-1">All-Da-Books</a>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active text-white" href="{% url 'book-list' %}">List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="{% url 'author-list' %}">Authors</a>
+        </li>
+    </ul>
 </nav>

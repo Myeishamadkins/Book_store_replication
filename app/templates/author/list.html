@@ -1,6 +1,9 @@
 {% extends 'base.html' %} {% block main %}
 <main class="container mt-3">
-    <h1>Author</h1>
+    <div class="d-flex justify-content-between">
+        <h1>Author</h1>
+        <a href="{% url 'author-create' %}">Add Author</a>
+    </div>
     <ul class='m1-0 p1-0'>
         {% for author in authors %}
         <li class="d-flex align-items-center border rounded mb-3 p-0">
