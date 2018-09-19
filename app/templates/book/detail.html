@@ -1,4 +1,27 @@
-{% extends 'base.html' %}
-{% block main %}
-{{ book }}
-{% endblock main %}
+{% extends 'base.html' %} {% block main %}
+<div class="container mt-3">
+    <ul>
+        <li>
+            <div class="d-flex justify-content-between">
+                <h1>{{ book.title }}</h1>
+                <a href="{% url 'book-update' book.id %}"><button type="button" class="btn bg-white border-primary" href="">Update</button></a>
+            </div>
+            <div>
+                {% for author in book.authors.all %}
+                <h3>by: {{ author.name }}</h3>
+                {% endfor %}
+            </div>
+            <hr>
+            <div>
+                <a href="book-list"><img src="{{ book.cover_image.url}}" alt="" width='265'></a>
+            </div>
+            <div>
+                <br>
+                <h4>Description:
+                    <hr> {{ book.description }}
+                </h4>
+            </div>
+        </li>
+    </ul>
+</div>
+{{ book }} {% endblock main %}
