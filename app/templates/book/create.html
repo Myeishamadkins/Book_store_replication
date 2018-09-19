@@ -1,23 +1,52 @@
 {% extends 'base.html' %} {% block main %}
 <form class="container mt-3" method="post" enctype="multipart/form-data">
-    <div class="title">
-        <div class="input-group mb-3">
-            <div class="input-group-prepend ">
-                <span class="input-group-text " id="basic-addon1 ">Title: </span>
-            </div>
-            <input type="text " class="form-control " placeholder="Insert title here... " aria-label="Username" aria-describedby="basic-addon1">
+    <div class="card">
+
+        <h5 class="card-header info-color white-text text-center py-4">
+            <strong>Create</strong>
+        </h5>
+        <div class="card-body px-lg-5 pt-0">
+            <form class="text-center" style="color: #757575;">
+
+                <div class=" title md-form mt-3">
+                    <label for="materialContactFormName">Title:</label>
+                    <input type="text" id="materialContactFormName" class="form-control">
+                </div>
+
+
+                <div class=" price md-form">
+                    <label for="materialContactFormEmail">Price</label>
+                    <input type="email" id="materialContactFormEmail" class="form-control">
+                </div>
+
+
+                <div>
+                    <span>Authors: </span>
+                    <label for=""></label>
+                    {% include 'book/components/authors-selector.html' %}
+                </div>
+
+
+                <div class="md-form">
+                    <label for="materialContactFormMessage">Description:</label>
+                    <textarea type="text" id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+                </div>
+                <br>
+
+                <div class="form-check">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                </div>
+
+                <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+
+            </form>
+
         </div>
+
     </div>
-    <div class="price">
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
-                <span class="input-group-text">0.00</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-        </div>
-    </div>
-    <div class="authors"></div>
     {% csrf_token %}
 </form>
 {% endblock main %}
