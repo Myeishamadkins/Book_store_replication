@@ -1,0 +1,121 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+0001_add_author_and_book.py	../app/migrations/0001_add_author_and_book.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	../bookstore/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:27
+AUTH_PASSWORD_VALIDATORS	../bookstore/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:84
+AppConfig	../app/apps.py	/^class AppConfig(AppConfig):$/;"	kind:class	line:4
+Author	../app/models.py	/^class Author(models.Model):$/;"	kind:class	line:6
+AuthorCreate	../app/views.py	/^class AuthorCreate(views.generic.CreateView):$/;"	kind:class	line:63
+AuthorDetail	../app/views.py	/^class AuthorDetail(views.generic.DetailView):$/;"	kind:class	line:57
+AuthorList	../app/views.py	/^class AuthorList(views.generic.ListView):$/;"	kind:class	line:50
+AuthorUpdate	../app/views.py	/^class AuthorUpdate(views.generic.UpdateView):$/;"	kind:class	line:69
+BASE_DIR	../bookstore/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+Book	../app/models.py	/^class Book(models.Model):$/;"	kind:class	line:34
+BookCreate	../app/views.py	/^class BookCreate(views.generic.CreateView):$/;"	kind:class	line:28
+BookDetail	../app/views.py	/^class BookDetail(views.generic.DetailView):$/;"	kind:class	line:22
+BookList	../app/views.py	/^class BookList(views.generic.ListView):$/;"	kind:class	line:15
+BookManager	../app/models.py	/^class BookManager(models.Manager):$/;"	kind:class	line:19
+BookOfTheDayManager	../app/models.py	/^class BookOfTheDayManager(models.Manager):$/;"	kind:class	line:23
+BookUpdate	../app/views.py	/^class BookUpdate(views.generic.UpdateView):$/;"	kind:class	line:39
+DATABASES	../bookstore/settings.py	/^DATABASES = {$/;"	kind:variable	line:74
+DEBUG	../bookstore/settings.py	/^DEBUG = True$/;"	kind:variable	line:25
+Home	../app/views.py	/^class Home(views.generic.TemplateView):$/;"	kind:class	line:6
+INSTALLED_APPS	../bookstore/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:31
+LANGUAGE_CODE	../bookstore/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:102
+MEDIA_ROOT	../bookstore/settings.py	/^MEDIA_ROOT = os.path.join(BASE_DIR, 'media')$/;"	kind:variable	line:117
+MEDIA_URL	../bookstore/settings.py	/^MEDIA_URL = '\/media\/'$/;"	kind:variable	line:118
+MIDDLEWARE	../bookstore/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:41
+Meta	../app/models.py	/^    class Meta:$/;"	kind:class	line:44
+Meta	../app/models.py	/^    class Meta:$/;"	kind:class	line:9
+Migration	../app/migrations/0001_add_author_and_book.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:170
+ROOT_URLCONF	../bookstore/settings.py	/^ROOT_URLCONF = 'bookstore.urls'$/;"	kind:variable	line:51
+STATIC_URL	../bookstore/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:115
+TEMPLATES	../bookstore/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:53
+TIME_ZONE	../bookstore/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:104
+USE_I18N	../bookstore/settings.py	/^USE_I18N = True$/;"	kind:variable	line:106
+USE_L10N	../bookstore/settings.py	/^USE_L10N = True$/;"	kind:variable	line:108
+USE_TZ	../bookstore/settings.py	/^USE_TZ = True$/;"	kind:variable	line:110
+WSGI_APPLICATION	../bookstore/settings.py	/^WSGI_APPLICATION = 'bookstore.wsgi.application'$/;"	kind:variable	line:69
+__init__.py	../app/__init__.py	1;"	kind:file	line:1
+__init__.py	../app/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../bookstore/__init__.py	1;"	kind:file	line:1
+__str__	../app/models.py	/^    def __str__(self):$/;"	kind:member	line:12
+__str__	../app/models.py	/^    def __str__(self):$/;"	kind:member	line:47
+_all_ids	../app/models.py	/^    def _all_ids(self):$/;"	kind:member	line:24
+_random_id	../app/models.py	/^    def _random_id(self):$/;"	kind:member	line:27
+add_initial_books_and_authors	../app/migrations/0001_add_author_and_book.py	/^def add_initial_books_and_authors(apps, _schema_editor):$/;"	kind:function	line:149
+admin.py	../app/admin.py	1;"	kind:file	line:1
+application	../bookstore/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+apps.py	../app/apps.py	1;"	kind:file	line:1
+authors	../app/models.py	/^    authors = models.ManyToManyField(Author)$/;"	kind:variable	line:36
+authors_ids	../app/models.py	/^    def authors_ids(self):$/;"	kind:member	line:53
+books	../app/migrations/0001_add_author_and_book.py	/^books = [$/;"	kind:variable	line:6
+cached_home	../app/urls.py	/^cached_home = cache_page(1)(views.Home.as_view())$/;"	kind:variable	line:5
+context_object_name	../app/views.py	/^    context_object_name = 'author'$/;"	kind:variable	line:60
+context_object_name	../app/views.py	/^    context_object_name = 'authors'$/;"	kind:variable	line:53
+context_object_name	../app/views.py	/^    context_object_name = 'book'$/;"	kind:variable	line:25
+context_object_name	../app/views.py	/^    context_object_name = 'books'$/;"	kind:variable	line:18
+cover_image	../app/models.py	/^    cover_image = models.ImageField(upload_to='book_covers')$/;"	kind:variable	line:38
+default_related_name	../app/models.py	/^        default_related_name = 'authors'$/;"	kind:variable	line:10
+default_related_name	../app/models.py	/^        default_related_name = 'books'$/;"	kind:variable	line:45
+dependencies	../app/migrations/0001_add_author_and_book.py	/^    dependencies = []$/;"	kind:variable	line:174
+description	../app/models.py	/^    description = models.TextField()$/;"	kind:variable	line:39
+do_nothing	../app/migrations/0001_add_author_and_book.py	/^def do_nothing(_apps, _schema_editor):$/;"	kind:function	line:166
+fields	../app/migrations/0001_add_author_and_book.py	/^            fields=[$/;"	kind:variable	line:179
+fields	../app/migrations/0001_add_author_and_book.py	/^            fields=[$/;"	kind:variable	line:191
+fields	../app/views.py	/^    fields = ['name']$/;"	kind:variable	line:66
+fields	../app/views.py	/^    fields = ['name']$/;"	kind:variable	line:72
+fields	../app/views.py	/^    fields = ['title', 'authors', 'price', 'cover_image', 'description']$/;"	kind:variable	line:31
+fields	../app/views.py	/^    fields = ['title', 'authors', 'price', 'cover_image', 'description']$/;"	kind:variable	line:42
+get	../app/models.py	/^    def get(self):$/;"	kind:member	line:30
+get_absolute_url	../app/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:15
+get_absolute_url	../app/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:50
+get_context_data	../app/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:33
+get_context_data	../app/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:44
+get_context_data	../app/views.py	/^    def get_context_data(self, **kwargs):$/;"	kind:member	line:9
+initial	../app/migrations/0001_add_author_and_book.py	/^    initial = True$/;"	kind:variable	line:172
+manage.py	../manage.py	1;"	kind:file	line:1
+model	../app/views.py	/^    model = models.Author$/;"	kind:variable	line:51
+model	../app/views.py	/^    model = models.Author$/;"	kind:variable	line:58
+model	../app/views.py	/^    model = models.Author$/;"	kind:variable	line:64
+model	../app/views.py	/^    model = models.Author$/;"	kind:variable	line:70
+model	../app/views.py	/^    model = models.Book$/;"	kind:variable	line:23
+model	../app/views.py	/^    model = models.Book$/;"	kind:variable	line:29
+model	../app/views.py	/^    model = models.Book$/;"	kind:variable	line:40
+models.py	../app/models.py	1;"	kind:file	line:1
+name	../app/apps.py	/^    name = 'app'$/;"	kind:variable	line:5
+name	../app/migrations/0001_add_author_and_book.py	/^            name='Author',$/;"	kind:variable	line:178
+name	../app/migrations/0001_add_author_and_book.py	/^            name='Book',$/;"	kind:variable	line:190
+name	../app/models.py	/^    name = models.TextField()$/;"	kind:variable	line:7
+name	../app/urls.py	/^        name='author-update'),$/;"	kind:variable	line:19
+objects	../app/models.py	/^    objects = BookManager()$/;"	kind:variable	line:41
+of_the_day	../app/models.py	/^    of_the_day = BookOfTheDayManager()$/;"	kind:variable	line:42
+operations	../app/migrations/0001_add_author_and_book.py	/^    operations = [$/;"	kind:variable	line:176
+options	../app/migrations/0001_add_author_and_book.py	/^            options={$/;"	kind:variable	line:185
+options	../app/migrations/0001_add_author_and_book.py	/^            options={$/;"	kind:variable	line:201
+paginate_by	../app/views.py	/^    paginate_by = 5$/;"	kind:variable	line:19
+paginate_by	../app/views.py	/^    paginate_by = 5$/;"	kind:variable	line:54
+price	../app/models.py	/^    price = models.FloatField()$/;"	kind:variable	line:37
+queryset	../app/views.py	/^    queryset = models.Book.objects.all().prefetch_related('authors')$/;"	kind:variable	line:16
+settings.py	../bookstore/settings.py	1;"	kind:file	line:1
+template_name	../app/views.py	/^    template_name = 'author\/create.html'$/;"	kind:variable	line:65
+template_name	../app/views.py	/^    template_name = 'author\/detail.html'$/;"	kind:variable	line:59
+template_name	../app/views.py	/^    template_name = 'author\/list.html'$/;"	kind:variable	line:52
+template_name	../app/views.py	/^    template_name = 'author\/update.html'$/;"	kind:variable	line:71
+template_name	../app/views.py	/^    template_name = 'book\/create.html'$/;"	kind:variable	line:30
+template_name	../app/views.py	/^    template_name = 'book\/detail.html'$/;"	kind:variable	line:24
+template_name	../app/views.py	/^    template_name = 'book\/list.html'$/;"	kind:variable	line:17
+template_name	../app/views.py	/^    template_name = 'book\/update.html'$/;"	kind:variable	line:41
+template_name	../app/views.py	/^    template_name = 'home.html'$/;"	kind:variable	line:7
+tests.py	../app/tests.py	1;"	kind:file	line:1
+title	../app/models.py	/^    title = models.TextField()$/;"	kind:variable	line:35
+urlpatterns	../app/urls.py	/^urlpatterns = [$/;"	kind:variable	line:7
+urlpatterns	../bookstore/urls.py	/^urlpatterns = [$/;"	kind:variable	line:20
+urls.py	../app/urls.py	1;"	kind:file	line:1
+urls.py	../bookstore/urls.py	1;"	kind:file	line:1
+views.py	../app/views.py	1;"	kind:file	line:1
+wsgi.py	../bookstore/wsgi.py	1;"	kind:file	line:1

@@ -1,8 +1,10 @@
 {% extends 'base.html' %} {% block main %}
-<div class="container mt-3">
-    <div class="d-flex justify-content-between">
-        <h1>{{ author.name }}</h1>
-        <a href="{% url 'author-update' author.id%}"><button type="button" class="btn bg-white border-primary" href="">Update</button></a>
+<div class="card p-3 border-maroon">
+    <div class="container mt-3">
+        <div class="d-flex justify-content-between">
+            <h1>{{ author.name }}</h1>
+            <a href="{% url 'author-update' author.id%}"><button type="button" class="btn bg-white border-maroon" href="">Update</button></a>
+        </div>
+        <br> {%for book in author.books.all%}{% include 'book/components/book_card.html'%}{%endfor%}{% endblock main %}
     </div>
-    <br> {%for book in author.books.all%}{% include 'book/components/book_card.html'%}{%endfor%}{% endblock main %}
 </div>

@@ -1,17 +1,24 @@
 {% extends 'base.html' %} {% block main %}
-<main class="container mt-3">
-    <div class="d-flex justify-content-between">
-        <h1>Author</h1>
-        <a href="{% url 'author-create' %}">Add Author</a>
-    </div>
-    <ul class='m1-0 p1-0'>
-        {% for author in authors %}
-        <li class="d-flex align-items-center border rounded mb-3 p-0">
-            <h4 class="col-4 border-right mb-0 p-2"><a href="{{author.get_absolute_url}}">{{ author.name }}</a></h4>
-            <p class="pl-3 mb-0">Last Book: <a href="{{author.books.last.get_absolute_url}}">{{ author.books.last.title }}</a></p>
-        </li>
-        {% endfor %}
-    </ul>
-    {% include 'components/paginate.html' %}
-</main>
+
+<div class="card-body">
+    <main class="container mt-3">
+        <div class="card p-3 border-maroon">
+            <div class="d-flex justify-content-between">
+                <h1>Author</h1>
+                <a href="{% url 'author-create' %}">Add Author</a>
+            </div>
+            <ul class='m1-0 p1-0'>
+                {% for author in authors %}
+                <li class="d-flex align-items-center border rounded mb-3 p-0">
+                    <h4 class="col-4 border-right mb-0 p-2"><a href="{{author.get_absolute_url}}">{{ author.name }}</a></h4>
+                    <p class="pl-3 mb-0">Last Book: <a href="{{author.books.last.get_absolute_url}}">
+                            {{ author.books.last.title }}
+                        </a></p>
+                </li>
+                {% endfor %}
+            </ul>
+            {% include 'components/paginate.html' %}
+        </div>
+    </main>
+</div>
 {% endblock main %}

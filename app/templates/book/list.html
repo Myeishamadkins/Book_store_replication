@@ -1,17 +1,19 @@
 {% extends 'base.html' %}{% load static %} {% block main %}
-
-<main class="container mt-3">
-    <div class="d-flex justify-content-between">
-        <h1>Books</h1>
-        <a href="{% url 'book-create' %}"><button type="button" class="btn bg-white border-primary" href="">Create</button></a>
-    </div>
-    <div>
-        <ul class="m1-0 p1-0">
-            {% for book in books %} {% include 'book/components/book_card.html'%} {% endfor %}
-        </ul>
-    </div>
-
-    {% include 'components/paginate.html' %}
-</main>
+<div class="card-body">
+    <main class="container mt-3">
+        <div class="card p-3 border-maroon">
+            <div class="d-flex justify-content-between">
+                <h1>Books</h1>
+                <a href="{% url 'book-create' %}"><button type="button" class="btn bg-white border-maroon" href="">Create</button></a>
+            </div>
+            <div>
+                <ul class="m1-0 p1-0">
+                    {% for book in books %} {% include 'book/components/book_card.html'%} {% endfor %}
+                </ul>
+            </div>
+            {% include 'components/paginate.html' %}
+        </div>
+    </main>
+</div>
 
 {% endblock main %}
