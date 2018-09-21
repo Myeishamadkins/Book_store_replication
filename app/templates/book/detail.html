@@ -11,7 +11,7 @@
                     </div>
                     <div>
                         {% for author in book.authors.all %}
-                        <h3>by: {{ author.name }}</h3>
+                        <h3><a href="{{author.get_absolute_url}}" class="text-dark">By: {{ author.name }}</a></h3>
                         {% endfor %}
                     </div>
                     <hr>

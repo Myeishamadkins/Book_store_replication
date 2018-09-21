@@ -54,7 +54,6 @@ strong,
     border: 5px solid rgb(155, 17, 84);
 }
 body {
-    opacity: ;
     background-image: url("https://www.muralswallpaper.com/app/uploads/black-marble-textures-plain.jpg");
 }
 .background-maroon {
@@ -62,4 +61,7 @@ body {
 }
 .text-maroon {
     color: rgb(155, 17, 84);
+}
+.card {
+    opacity: 0.9;
 }
