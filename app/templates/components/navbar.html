@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand navbar-dark" id="navbar">
-    <a href="{% url 'home' %}" class="navbar-brand border border-white rounded p-1">All-Da-Books</a>
+    <a href="{% url 'home' %}" class="navbar-brand border border-white rounded p-1"><span class="fancy-text">All-Da-Books</span></a>
     <ul class="nav">
         <li class="nav-item">
             <a class="nav-link active text-white" href="{% url 'book-list' %}">List</a>
@@ -8,4 +8,10 @@
             <a class="nav-link text-white" href="{% url 'author-list' %}">Authors</a>
         </li>
     </ul>
+    <!-- <form class="form-inline">
+        <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+        <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+    </form> -->
 </nav>
